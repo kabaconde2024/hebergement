@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.vertical-menu {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 1px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.vertical-menu a img {
+    margin-right: 10px;
+    width: 24px; /* Ajustez la taille des images selon vos besoins */
+    height: 24px; /* Ajustez la taille des images selon vos besoins */
+}

@@ -1,0 +1,138 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.annonce {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 350px; /* Hauteur fixe du conteneur de l'annonce */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.annonce img {
+    max-width: 100%;
+    height: 200px; /* Hauteur fixe de l'image à l'intérieur de l'annonce */
+    object-fit: cover; /* Pour s'assurer que l'image remplit l'espace disponible sans déformation */
+    border-radius: 5px;
+}
+
+.annonce-details {
+    margin-top: 10px;
+}
+
+.annonce-details p {
+    margin: 5px 0;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: inherit;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    overflow: visible; /* Assurez-vous que les enfants ne sont pas coupés */
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 40px; /* Ajustement de la marge entre les éléments */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Bouton stylisé */
+.btn {
+    margin-left: 10px; /* Ajustement de la marge entre les boutons */
+    color: #fff;
+    background-color: #f0ad4e; /* Couleur orange pour le style warning */
+    border-color: #eea236; /* Couleur de bordure pour le style warning */
+    padding: 8px 12px; /* Ajustement du padding pour mieux centrer le texte */
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #ec971f; /* Couleur de fond au survol */
+    border-color: #d58512; /* Couleur de bordure au survol */
+}
+
+.btn .icon {
+    margin-right: 5px; /* Marge à droite de l'icône */
+}
+
+/* Styles pour le sous-menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 3px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
